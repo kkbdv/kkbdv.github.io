@@ -11,7 +11,7 @@
 
     <title>
         
-        kkbdv的博客 | kkbdv&#39;s Blog
+        写博客的日常操作 - kkbdv的博客 | kkbdv&#39;s Blog
         
     </title>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li class="active">
+            <li>
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#太久没更博客了，很容易忘记的一些基本的命令，做个记录提醒自己"><span class="toc-text">太久没更博客了，很容易忘记的一些基本的命令，做个记录提醒自己</span></a></li></ol><li class="toc-item toc-level-5"><a class="toc-link" href="#1-写文章"><span class="toc-text">1.写文章</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-提交"><span class="toc-text">2.提交</span></a>
+</li></div>
+    
 </div>
 
 
@@ -111,87 +115,48 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 576px">
-    
-    <div class="post-preview">
-        <div class="post-time">2019-06-29</div>
-        <div class="post-info">
-            <a href="/2019/06/29/写博客的日常操作/">
-                <h3>
-                    写博客的日常操作
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#备忘录" title="备忘录">备忘录</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+
+<div class="post-container">
+    <div class="post-title">
+        写博客的日常操作
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-04-22</div>
-        <div class="post-info">
-            <a href="/2019/04/22/markdown初探/">
-                <h3>
-                    markdown初探
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#浅入" title="浅入">浅入</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2019-06-29 20:14:51</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#备忘录" title="备忘录">备忘录</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-04-21</div>
-        <div class="post-info">
-            <a href="/2019/04/21/我的第一个博客/">
-                <h3>
-                    我的第一个博客
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#测试" title="测试">测试</a>
-                <span>/</span>
-                
-                
-            </p>
+    <div class="post-content ">
+        <h6 id="太久没更博客了，很容易忘记的一些基本的命令，做个记录提醒自己"><a href="#太久没更博客了，很容易忘记的一些基本的命令，做个记录提醒自己" class="headerlink" title="太久没更博客了，很容易忘记的一些基本的命令，做个记录提醒自己"></a>太久没更博客了，很容易忘记的一些基本的命令，做个记录提醒自己</h6><p><br></p>
+<h5 id="1-写文章"><a href="#1-写文章" class="headerlink" title="1.写文章"></a>1.写文章</h5><p>执行<font color="#FF0000"> new </font>命令，生成指定名称文章在 <font color="#FF0000"> _posts </font>文件夹下</p>
+<pre><code>1.hexo new [layout] &quot;文章标题&quot; #新建文章  (常用layout=post,scaffolds 目录下有格式文件可以查看，增加，修改)
+</code></pre><h5 id="2-提交"><a href="#2-提交" class="headerlink" title="2.提交"></a>2.提交</h5><p>在本地修改后，执行下列命令提交到相关文件到托管服务器</p>
+<pre><code>2. git add .
+3. git commit -m &quot;...&quot;
+4. git push origin develop
+</code></pre><p>然后执行<font color="#0000CD"> hexo generate -d </font>发布网站到master分支上</p>
+
+        
+        <br>
+        <div id="comment-container">
         </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-04-19</div>
-        <div class="post-info">
-            <a href="/2019/04/19/hello-world/">
-                <h3>
-                    Hello World
-                </h3>
-            </a>
-            <p>
-                
-            </p>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
         </div>
+
     </div>
-    
 </div>
-<ul class="pager">
-    
-    
-</ul>
 
     </div>
 </div>
@@ -293,7 +258,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
